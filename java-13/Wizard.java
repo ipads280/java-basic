@@ -12,9 +12,21 @@ public class Wizard {
     }
     
     public int getHp() {return this.hp;}
-    public int setHp(int hp) {this.hp=hp;}
+    public int setHp(int hp) {
+        if (hp<0) {
+            this.hp=0;
+        }
+        this.hp=hp;
+    }
+    
     public int getMp() {return this.mp;}
-    public int setMp(int mp) {this.mp=mp;}
+    public int setMp(int mp) {
+        if (mp<0) {
+            this.mp=0;
+        }
+        this.mp=mp;
+    }
+    
     public String getName() {return this.name;}
     public String setName(name) {this.name=name;}
     public Wand getWand() {return this.wand;}

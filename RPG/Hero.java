@@ -4,4 +4,9 @@ public class Hero extends Character {
         System.out.println("敵に10ポイントのダメージを与えた");
         m.hp-=10;
     }
+    
+    private void die() {
+        System.out.println(this.name+"は死んでしまった");
+        System.out.println("GAME OVERです");
+    }
 }

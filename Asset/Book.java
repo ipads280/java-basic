@@ -5,6 +5,7 @@ public class Book extends TangibleAsset {
         this.name=name;
         this.price=price;
         this.color=color;
+        this.isbn=isbn;
     }
     
     public String getIsbn() {return this.isbn;}
